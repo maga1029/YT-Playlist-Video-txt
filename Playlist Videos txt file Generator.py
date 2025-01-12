@@ -4,13 +4,9 @@ import bs4
 import requests
 import threading
 
-playlist_url_list = ["Future Coding Courses",
-                     "Important Video Tutorials for Later",
-                     "Completed Coding Courses",]
+playlist_url_list = []
 
-playlist_titles = ["https://www.youtube.com/playlist?list=PLcplSxBRVPflVWqEFQ2P3MOE9NQTTvYZY",
-                   "https://www.youtube.com/playlist?list=PLcplSxBRVPfnGL2U4NHcC8Sqw7G1CntTd",
-                   "https://www.youtube.com/playlist?list=PLcplSxBRVPfksxHXSIhKvFqYmnVH9ETw2",]
+playlist_titles_txt_file = []
 
 def f_main(f_main_playlist, f_main_titles_list):
 
@@ -59,4 +55,4 @@ def f_main(f_main_playlist, f_main_titles_list):
 
 
 for i in range(len(playlist_url_list)):
-    f_main(playlist_titles[i], playlist_url_list[i])
+    f_main(playlist_url_list[i], playlist_titles_txt_file[i])
